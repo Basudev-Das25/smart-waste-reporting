@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Reporting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Smart Waste Reporting Platform</h1>
+        <p>Report urban waste quickly and efficiently</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Report Waste</h2>
+
+            <input type="file" id="imageInput" accept="image/*">
+            <img id="preview">
+
+            <p><strong>Select Waste Location on Map</strong></p>
+            <div id="map"></div>
+
+            <button id="submitBtn">Analyze Waste</button>
+
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
