@@ -6,7 +6,9 @@ const reports = [
 
 const dashboardMap = L.map("dashboardMap").setView([20.5937, 78.9629], 5);
 
-L.titleLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {attribution: "© OpenStreetMap"}).addTo(dashboardMap);
+L.titleLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap"
+}).addTo(dashboardMap);
 
 let markers = [];
 
