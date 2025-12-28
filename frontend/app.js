@@ -18,7 +18,14 @@ imageInput.addEventListener("change", () => {
 
 
 //Intialize map
-const leafletMap = L.map("map").setView([20.5937, 78.9629], 5); //India
+const leafletMap = L.map("map", {
+    center: [20.5937, 78.9629],
+    zoom: 5
+});
+
+setTimeout(() => {
+    leafletMap.invaildateSize();
+}, 500);
 L.tileLayer("https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap"
 }).addTo(leafletMap);
